@@ -1,0 +1,1983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Emmanuel Kasivu | IT Professional Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body class="bg-slate-50">
+
+  <!-- NAVIGATION -->
+
+  <nav class="bg-slate-900/95 backdrop-blur-md text-white fixed w-full z-50 shadow-lg border-b border-slate-800/80">
+
+    <div class="container mx-auto px-4 sm:px-6 py-3.5 flex justify-between items-center">
+
+      <a href="#home"
+        class="text-xl sm:text-2xl font-bold text-white flex items-center gap-2 hover:text-cyan-400 transition">
+        <span class="text-cyan-500 font-extrabold"></span>portfolio<span class="text-cyan-500 font-extrabold"></span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="hidden md:flex items-center gap-6 lg:gap-8 text-sm lg:text-base font-medium">
+
+        <li><a href="#home" class="hover:text-cyan-400 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-cyan-400 transition">About</a></li>
+        <li><a href="#services" class="hover:text-cyan-400 transition">Services</a></li>
+        <li><a href="#skills" class="hover:text-cyan-400 transition">Skills</a></li>
+        <li><a href="#projects" class="hover:text-cyan-400 transition">Projects</a></li>
+        <li><a href="#reviews" class="hover:text-cyan-400 transition">Reviews</a></li>
+        <li><a href="#contact" class="hover:text-cyan-400 transition">Contact</a></li>
+
+      </ul>
+
+      <div class="flex items-center gap-3 sm:gap-4">
+        <!-- Dark Mode Toggle Button -->
+        <button id="darkBtn"
+          class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 flex items-center justify-center transition border border-slate-700/60 cursor-pointer"
+          title="Toggle Theme">
+          <i class="fas fa-moon text-lg"></i>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menuBtn"
+          class="md:hidden w-10 h-10 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 flex items-center justify-center transition border border-slate-700/60 cursor-pointer"
+          title="Toggle Navigation">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Dropdown Navigation Menu -->
+    <div id="mobileMenu"
+      class="hidden md:hidden bg-slate-900/98 border-b border-slate-800 px-6 py-5 shadow-2xl transition-all duration-300">
+      <ul class="flex flex-col space-y-4 text-base font-semibold text-slate-200">
+        <li><a href="#home"
+            class="mobile-nav-link block py-2 px-3 rounded-lg hover:bg-slate-800 hover:text-cyan-400 transition flex items-center gap-3"><i
+              class="fas fa-home text-cyan-500 w-5"></i> Home</a></li>
+        <li><a href="#about"
+            class="mobile-nav-link block py-2 px-3 rounded-lg hover:bg-slate-800 hover:text-cyan-400 transition flex items-center gap-3"><i
+              class="fas fa-user-tie text-cyan-500 w-5"></i> About</a></li>
+        <li><a href="#services"
+            class="mobile-nav-link block py-2 px-3 rounded-lg hover:bg-slate-800 hover:text-cyan-400 transition flex items-center gap-3"><i
+              class="fas fa-briefcase text-cyan-500 w-5"></i> Services</a></li>
+        <li><a href="#skills"
+            class="mobile-nav-link block py-2 px-3 rounded-lg hover:bg-slate-800 hover:text-cyan-400 transition flex items-center gap-3"><i
+              class="fas fa-code text-cyan-500 w-5"></i> Skills</a></li>
+        <li><a href="#projects"
+            class="mobile-nav-link block py-2 px-3 rounded-lg hover:bg-slate-800 hover:text-cyan-400 transition flex items-center gap-3"><i
+              class="fas fa-folder-open text-cyan-500 w-5"></i> Projects</a></li>
+        <li><a href="#reviews"
+            class="mobile-nav-link block py-2 px-3 rounded-lg hover:bg-slate-800 hover:text-cyan-400 transition flex items-center gap-3"><i
+              class="fas fa-star text-cyan-500 w-5"></i> Reviews</a></li>
+        <li><a href="#contact"
+            class="mobile-nav-link block py-2 px-3 rounded-lg hover:bg-slate-800 hover:text-cyan-400 transition flex items-center gap-3"><i
+              class="fas fa-envelope text-cyan-500 w-5"></i> Contact</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <!-- HERO -->
+
+  <section id="home" class="min-h-screen flex items-center bg-slate-900 text-white py-20 md:py-0">
+
+    <div class="container mx-auto px-6">
+
+      <div class="flex flex-col md:flex-row items-center gap-12 md:gap-20">
+
+        <!-- Profile image container on the left -->
+        <div class="w-full md:w-5/12 flex justify-center md:justify-start order-1 md:order-1 mb-8 md:mb-0">
+
+          <div class="profile-border-container">
+
+            <div class="profile-border-animated"></div>
+            <div class="profile-border-animated-reverse"></div>
+
+            <div class="profile-image-wrapper">
+
+              <img src="profile.jpeg" alt="Emmanuel Kasivu Profile" class="shadow-2xl">
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Text content on the right -->
+        <div class="w-full md:w-7/12 order-2 md:order-2 text-left">
+
+          <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+
+            Emmanuel Kasivu
+
+          </h1>
+
+          <h2 class="text-2xl md:text-3xl mb-6 flex items-center flex-wrap gap-2">
+
+            <span class="text-white">I am </span>
+            <span id="typing-text" class="text-[#39FF14] font-bold"></span>
+
+          </h2>
+
+          <p class="text-lg mb-10 text-slate-300">
+
+            Passionate about creating innovative technology solutions,
+            building responsive websites, analyzing data and developing
+            interactive dashboards that help organizations make better
+            decisions.
+
+          </p>
+
+          <div class="flex flex-wrap items-center gap-6 justify-start">
+
+            <a href="Emmanuel_kasivu_CV.pdf" download
+              class="bg-cyan-500 hover:bg-cyan-600 px-8 py-3 rounded-lg font-semibold transition duration-300 shadow-lg shadow-cyan-500/25">
+
+              Download CV
+
+            </a>
+
+            <a href="#contact"
+              class="border border-white hover:bg-white hover:text-slate-900 px-8 py-3 rounded-lg font-semibold transition duration-300">
+
+              Hire Me
+
+            </a>
+
+            <div class="flex items-center gap-5 ml-2">
+
+              <a href="https://linkedin.com/in/emmanuelkasivu224" target="_blank"
+                class="text-[#39FF14] hover:text-white transition duration-300 transform hover:scale-110"
+                title="LinkedIn">
+                <i class="fab fa-linkedin text-3xl"></i>
+              </a>
+
+              <a href="https://x.com/EngManuh_018" target="_blank"
+                class="text-[#39FF14] hover:text-white transition duration-300 transform hover:scale-110"
+                title="X (Twitter)">
+                <i class="fab fa-x-twitter text-3xl"></i>
+              </a>
+
+              <a href="https://github.com/emmanuelkasivu224-source" target="_blank"
+                class="text-[#39FF14] hover:text-white transition duration-300 transform hover:scale-110"
+                title="GitHub">
+                <i class="fab fa-github text-3xl"></i>
+              </a>
+
+              <a href="mailto:emmanuelkasivu224@gmail.com"
+                class="text-[#39FF14] hover:text-white transition duration-300 transform hover:scale-110" title="Email">
+                <i class="fas fa-envelope text-3xl"></i>
+              </a>
+
+              <a href="https://wa.me/254116089094" target="_blank"
+                class="text-[#39FF14] hover:text-white transition duration-300 transform hover:scale-110"
+                title="WhatsApp">
+                <i class="fab fa-whatsapp text-3xl"></i>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section id="about" class="py-24 bg-slate-50/50 dark:bg-slate-900/50 transition-colors">
+
+    <div class="container mx-auto px-6">
+
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span
+          class="inline-block px-4 py-1.5 rounded-full bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 font-semibold text-sm uppercase tracking-wider mb-3">
+          Get To Know Me
+        </span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white">
+          About <span class="text-cyan-500">Me</span>
+        </h2>
+        <div class="w-20 h-1.5 bg-gradient-to-r from-cyan-500 to-emerald-400 rounded-full mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+
+        <!-- Left Column: Profile Text & Vision/Mission -->
+        <div class="space-y-6">
+
+          <div
+            class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-xl border border-slate-200/80 dark:border-slate-700/80 hover:shadow-2xl transition duration-300">
+
+            <h3 class="text-2xl font-bold mb-4 text-slate-900 dark:text-white flex items-center gap-3">
+              <i class="fas fa-user-tie text-cyan-500"></i> Professional Profile
+            </h3>
+
+            <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-base">
+              I am <strong class="text-slate-900 dark:text-white font-semibold">Emmanuel Kasivu</strong>, an Information
+              Technology specialist passionate about software development, web design, data analytics, Power BI
+              dashboard development, and IT support.
+            </p>
+
+            <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-base mt-3">
+              I have completed professional certifications in Data Analytics at IdealNovate Data School, equipping me
+              with cutting-edge analytical tools and business intelligence skills.
+            </p>
+
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-6">
+
+            <div
+              class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg border-l-4 border-l-cyan-500 border border-slate-200/80 dark:border-slate-700/80 hover:-translate-y-1 transition duration-300">
+              <div
+                class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-500 flex items-center justify-center text-xl mb-3">
+                <i class="fas fa-eye"></i>
+              </div>
+              <h4 class="text-slate-900 dark:text-white font-bold text-xl mb-2">Vision</h4>
+              <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                To become a leading ICT professional recognized for delivering innovative, scalable, and impactful
+                technology solutions.
+              </p>
+            </div>
+
+            <div
+              class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg border-l-4 border-l-emerald-500 border border-slate-200/80 dark:border-slate-700/80 hover:-translate-y-1 transition duration-300">
+              <div
+                class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-xl mb-3">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <h4 class="text-slate-900 dark:text-white font-bold text-xl mb-2">Mission</h4>
+              <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                To continuously learn, innovate, and build digital tools that solve complex real-world business and
+                societal challenges.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Right Column: Education & Certifications -->
+        <div class="space-y-6">
+
+          <div
+            class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-200/80 dark:border-slate-700/80 hover:shadow-xl transition duration-300">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-500 flex items-center justify-center text-2xl">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div>
+                <h4 class="text-slate-900 dark:text-white font-bold text-xl">Education</h4>
+                <p class="text-cyan-600 dark:text-cyan-400 text-sm font-semibold">Degree Qualification</p>
+              </div>
+            </div>
+            <p class="text-slate-700 dark:text-slate-200 font-medium">
+              Bsc. in Information Technology
+            </p>
+            <p class="text-slate-500 dark:text-slate-400 text-sm">
+              Mount Kenya University
+            </p>
+          </div>
+
+          <div
+            class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-lg border border-slate-200/80 dark:border-slate-700/80 hover:shadow-xl transition duration-300">
+            <div class="flex items-center gap-4 mb-4">
+              <div
+                class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-2xl">
+                <i class="fas fa-award"></i>
+              </div>
+              <div>
+                <h4 class="text-slate-900 dark:text-white font-bold text-xl">Professional Certifications</h4>
+                <p class="text-emerald-600 dark:text-emerald-400 text-sm font-semibold">Verified Credentials</p>
+              </div>
+            </div>
+            <ul class="space-y-3 text-slate-700 dark:text-slate-200 text-sm">
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-emerald-500 mt-1 flex-shrink-0"></i>
+                <span><strong>Data Analytics Training</strong> — ICT Authority Kenya & Sigma Technical Institute.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-emerald-500 mt-1 flex-shrink-0"></i>
+                <span><strong>Data Analytics Certification</strong> — IdealNovate Data School.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-emerald-500 mt-1 flex-shrink-0"></i>
+                <span><strong>Cyber Security fundamentals Certificate</strong> — ICT Authority Kenya &
+                  Cybershujaaz.</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- STATISTICS -->
+
+  <section class="bg-slate-900 text-white py-16 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-emerald-500/10 pointer-events-none"></div>
+
+    <div class="container mx-auto px-6 relative z-10">
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+        <div class="p-4 rounded-xl bg-slate-800/50 backdrop-blur-md border border-slate-700/50">
+          <h3 class="text-4xl md:text-5xl font-extrabold text-cyan-400 mb-1">
+            15+
+          </h3>
+          <p class="text-slate-300 text-sm md:text-base font-medium">Projects Completed</p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-800/50 backdrop-blur-md border border-slate-700/50">
+          <h3 class="text-4xl md:text-5xl font-extrabold text-cyan-400 mb-1">
+            2+
+          </h3>
+          <p class="text-slate-300 text-sm md:text-base font-medium">Certifications</p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-800/50 backdrop-blur-md border border-slate-700/50">
+          <h3 class="text-4xl md:text-5xl font-extrabold text-cyan-400 mb-1">
+            10+
+          </h3>
+          <p class="text-slate-300 text-sm md:text-base font-medium">Technologies</p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-800/50 backdrop-blur-md border border-slate-700/50">
+          <h3 class="text-4xl md:text-5xl font-extrabold text-cyan-400 mb-1">
+            98%
+          </h3>
+          <p class="text-slate-300 text-sm md:text-base font-medium">Satisfaction Rate</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+
+  <section id="services" class="py-24 bg-white dark:bg-slate-900 transition-colors">
+
+    <div class="container mx-auto px-6">
+
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span
+          class="inline-block px-4 py-1.5 rounded-full bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 font-semibold text-sm uppercase tracking-wider mb-3">
+          What I Offer
+        </span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white">
+          My <span class="text-cyan-500">Services</span>
+        </h2>
+        <p class="text-slate-600 dark:text-slate-300 text-base mt-3">
+          High-quality digital solutions tailored to solve business needs and deliver measurable value.
+        </p>
+        <div class="w-20 h-1.5 bg-gradient-to-r from-cyan-500 to-emerald-400 rounded-full mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 tv:grid-cols-4 gap-6 sm:gap-8">
+
+        <div
+          class="service-card border border-slate-200/80 dark:border-slate-700/80 p-8 rounded-2xl bg-white dark:bg-slate-800 text-center shadow-lg hover:shadow-2xl hover:border-cyan-500/50 transition-all duration-300">
+          <div
+            class="w-16 h-16 rounded-2xl bg-cyan-500/10 text-cyan-500 dark:text-cyan-400 flex items-center justify-center text-3xl mx-auto mb-6">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Web Development</h3>
+          <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+            Responsive, fast, and modern custom websites built with clean code and intuitive user interface design.
+          </p>
+        </div>
+
+        <div
+          class="service-card border border-slate-200/80 dark:border-slate-700/80 p-8 rounded-2xl bg-white dark:bg-slate-800 text-center shadow-lg hover:shadow-2xl hover:border-cyan-500/50 transition-all duration-300">
+          <div
+            class="w-16 h-16 rounded-2xl bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 flex items-center justify-center text-3xl mx-auto mb-6">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Data Analytics</h3>
+          <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+            Transforming raw data into clear, actionable business insights to drive smarter strategic decision-making.
+          </p>
+        </div>
+
+        <div
+          class="service-card border border-slate-200/80 dark:border-slate-700/80 p-8 rounded-2xl bg-white dark:bg-slate-800 text-center shadow-lg hover:shadow-2xl hover:border-cyan-500/50 transition-all duration-300">
+          <div
+            class="w-16 h-16 rounded-2xl bg-amber-500/10 text-amber-500 dark:text-amber-400 flex items-center justify-center text-3xl mx-auto mb-6">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Power BI Dashboards</h3>
+          <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+            Interactive, real-time Business Intelligence dashboards for executive monitoring and KPI tracking.
+          </p>
+        </div>
+
+        <div
+          class="service-card border border-slate-200/80 dark:border-slate-700/80 p-8 rounded-2xl bg-white dark:bg-slate-800 text-center shadow-lg hover:shadow-2xl hover:border-cyan-500/50 transition-all duration-300">
+          <div
+            class="w-16 h-16 rounded-2xl bg-green-500/10 text-green-500 dark:text-green-400 flex items-center justify-center text-3xl mx-auto mb-6">
+            <i class="fas fa-file-excel"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Excel Reporting</h3>
+          <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+            Advanced spreadsheet modeling, Power Query automation, data cleaning, and dynamic pivot reporting.
+          </p>
+        </div>
+
+        <div
+          class="service-card border border-slate-200/80 dark:border-slate-700/80 p-8 rounded-2xl bg-white dark:bg-slate-800 text-center shadow-lg hover:shadow-2xl hover:border-cyan-500/50 transition-all duration-300">
+          <div
+            class="w-16 h-16 rounded-2xl bg-purple-500/10 text-purple-500 dark:text-purple-400 flex items-center justify-center text-3xl mx-auto mb-6">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">IT Support</h3>
+          <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+            Comprehensive hardware/software troubleshooting, system maintenance, and user support operations.
+          </p>
+        </div>
+
+        <div
+          class="service-card border border-slate-200/80 dark:border-slate-700/80 p-8 rounded-2xl bg-white dark:bg-slate-800 text-center shadow-lg hover:shadow-2xl hover:border-cyan-500/50 transition-all duration-300">
+          <div
+            class="w-16 h-16 rounded-2xl bg-indigo-500/10 text-indigo-500 dark:text-indigo-400 flex items-center justify-center text-3xl mx-auto mb-6">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Database Management</h3>
+          <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+            Designing, optimizing, and managing relational databases (SQL) for efficient data storage and rapid
+            retrieval.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+
+  <section id="skills" class="py-24 bg-slate-50/70 dark:bg-slate-900/70 transition-colors">
+
+    <div class="container mx-auto px-6">
+
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span
+          class="inline-block px-4 py-1.5 rounded-full bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 font-semibold text-sm uppercase tracking-wider mb-3">
+          Technical Expertise
+        </span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white">
+          My <span class="text-cyan-500">Skills</span>
+        </h2>
+        <p class="text-slate-600 dark:text-slate-300 text-base mt-3">
+          Core technical proficiencies in Web Development, Data Analytics, and Software Engineering.
+        </p>
+        <div class="w-20 h-1.5 bg-gradient-to-r from-cyan-500 to-emerald-400 rounded-full mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 tv:grid-cols-2 gap-6 sm:gap-8">
+
+        <!-- Skill Card 1: Web Development & Frontend -->
+        <div
+          class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-xl border border-slate-200/80 dark:border-slate-700/80 space-y-6">
+
+          <h3
+            class="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-3 border-b border-slate-100 dark:border-slate-700 pb-4">
+            <i class="fas fa-laptop-code text-cyan-500 text-2xl"></i> Web Development & Frontend
+          </h3>
+
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                <i class="fab fa-html5 text-orange-500 text-lg"></i> HTML5
+              </span>
+              <span
+                class="text-xs font-bold px-2.5 py-1 rounded-full bg-cyan-500/10 text-cyan-600 dark:text-cyan-400">95%</span>
+            </div>
+            <div class="progress"><span style="width:95%"></span></div>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                <i class="fab fa-css3-alt text-blue-500 text-lg"></i> CSS3
+              </span>
+              <span
+                class="text-xs font-bold px-2.5 py-1 rounded-full bg-cyan-500/10 text-cyan-600 dark:text-cyan-400">92%</span>
+            </div>
+            <div class="progress"><span style="width:92%"></span></div>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                <i class="fas fa-wind text-sky-400 text-lg"></i> Tailwind CSS
+              </span>
+              <span
+                class="text-xs font-bold px-2.5 py-1 rounded-full bg-cyan-500/10 text-cyan-600 dark:text-cyan-400">90%</span>
+            </div>
+            <div class="progress"><span style="width:90%"></span></div>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                <i class="fab fa-js text-yellow-400 text-lg"></i> JavaScript
+              </span>
+              <span
+                class="text-xs font-bold px-2.5 py-1 rounded-full bg-cyan-500/10 text-cyan-600 dark:text-cyan-400">80%</span>
+            </div>
+            <div class="progress"><span style="width:80%"></span></div>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                <i class="fas fa-fire text-amber-500 text-lg"></i> Firebase
+              </span>
+              <span
+                class="text-xs font-bold px-2.5 py-1 rounded-full bg-cyan-500/10 text-cyan-600 dark:text-cyan-400">95%</span>
+            </div>
+            <div class="progress"><span style="width:95%"></span></div>
+          </div>
+
+        </div>
+
+        <!-- Skill Card 2: Data Analytics & Programming -->
+        <div
+          class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-xl border border-slate-200/80 dark:border-slate-700/80 space-y-6">
+
+          <h3
+            class="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-3 border-b border-slate-100 dark:border-slate-700 pb-4">
+            <i class="fas fa-chart-pie text-emerald-500 text-2xl"></i> Data Analytics & Tools
+          </h3>
+
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                <i class="fas fa-chart-bar text-amber-500 text-lg"></i> Power BI
+              </span>
+              <span
+                class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">90%</span>
+            </div>
+            <div class="progress"><span style="width:90%"></span></div>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                <i class="fas fa-file-excel text-green-600 text-lg"></i> Advanced Excel
+              </span>
+              <span
+                class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">92%</span>
+            </div>
+            <div class="progress"><span style="width:92%"></span></div>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                <i class="fas fa-database text-blue-500 text-lg"></i> SQL Database
+              </span>
+              <span
+                class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">80%</span>
+            </div>
+            <div class="progress"><span style="width:80%"></span></div>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                <i class="fab fa-python text-sky-500 text-lg"></i> Python Programming
+              </span>
+              <span
+                class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">80%</span>
+            </div>
+            <div class="progress"><span style="width:80%"></span></div>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-semibold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                <i class="fab fa-git-alt text-orange-600 text-lg"></i> Git & GitHub
+              </span>
+              <span
+                class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">75%</span>
+            </div>
+            <div class="progress"><span style="width:75%"></span></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section id="projects" class="py-24 bg-white dark:bg-slate-900 transition-colors">
+
+    <div class="container mx-auto px-6">
+
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span
+          class="inline-block px-4 py-1.5 rounded-full bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 font-semibold text-sm uppercase tracking-wider mb-3">
+          My Portfolio
+        </span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white">
+          Featured <span class="text-cyan-500">Projects</span>
+        </h2>
+        <p class="text-slate-600 dark:text-slate-300 text-base mt-3">
+          A showcase of recent software, web development, and data analytics work.
+        </p>
+        <div class="w-20 h-1.5 bg-gradient-to-r from-cyan-500 to-emerald-400 rounded-full mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 tv:grid-cols-4 gap-6 sm:gap-8">
+
+        <div
+          class="project-card border border-slate-200/80 dark:border-slate-700/80 rounded-2xl overflow-hidden bg-white dark:bg-slate-800 flex flex-col justify-between shadow-lg hover:shadow-2xl transition duration-300 group">
+          <div>
+            <div class="relative overflow-hidden">
+              <img src="portfolio project.png" alt="Portfolio Website"
+                class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+              <span
+                class="absolute top-3 left-3 bg-slate-900/85 backdrop-blur-md text-cyan-400 text-xs font-semibold px-3 py-1 rounded-full border border-cyan-500/30">
+                Web Development
+              </span>
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Portfolio Website</h3>
+              <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                Responsive modern portfolio website built with HTML5, CSS3, Tailwind CSS, and interactive JavaScript
+                features.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0 mt-auto">
+            <a href="portfolio.html" class="view-project-btn w-full text-center">
+              View Project <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- POWER BI HR ANALYTICS PROJECT -->
+        <div
+          class="project-card border border-slate-200/80 dark:border-slate-700/80 rounded-2xl overflow-hidden bg-white dark:bg-slate-800 flex flex-col justify-between shadow-lg hover:shadow-2xl transition duration-300 group">
+          <div>
+            <div class="relative overflow-hidden">
+              <img src="power BI project.jpeg" alt="HR Analytics Power BI Dashboard"
+                class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+              <span
+                class="absolute top-3 left-3 bg-slate-900/85 backdrop-blur-md text-amber-400 text-xs font-semibold px-3 py-1 rounded-full border border-amber-500/30 flex items-center gap-1.5">
+                <i class="fas fa-chart-pie text-amber-400"></i> Power BI Solutions
+              </span>
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">HR Analytics Power BI Dashboard</h3>
+              <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4">
+                Interactive executive Power BI dashboard analyzing workforce attrition, monthly income, department
+                demographics, and employee satisfaction metrics.
+              </p>
+              <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500 dark:text-slate-400">
+                <span
+                  class="bg-amber-500/10 text-amber-600 dark:text-amber-400 px-2.5 py-1 rounded-md font-semibold">Power
+                  BI Desktop</span>
+                <span class="bg-slate-100 dark:bg-slate-700 px-2.5 py-1 rounded-md">DAX & Data Model</span>
+                <span class="bg-slate-100 dark:bg-slate-700 px-2.5 py-1 rounded-md">HR Raw Dataset</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0 mt-auto flex flex-col gap-2.5">
+            <button id="openHrPowerBiBtn"
+              class="view-project-btn w-full text-center cursor-pointer bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold py-2.5 px-4 rounded-xl shadow-md transition duration-300 flex items-center justify-center gap-2">
+              <i class="fas fa-chart-bar"></i> Interactive Dashboard
+            </button>
+            <div class="grid grid-cols-2 gap-2 text-xs">
+              <a href="HR_Analytics_Dataset.csv" download
+                class="py-2 px-3 bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-slate-800 dark:text-slate-200 rounded-lg text-center font-semibold transition flex items-center justify-center gap-1.5 shadow-sm">
+                <i class="fas fa-file-csv text-amber-500 text-sm"></i> Raw CSV
+              </a>
+              <a href="HR_Analytics_Dashboard.pbix" download
+                class="py-2 px-3 bg-amber-500/10 hover:bg-amber-500/20 text-amber-600 dark:text-amber-400 rounded-lg text-center font-semibold transition flex items-center justify-center gap-1.5 shadow-sm border border-amber-500/20">
+                <i class="fas fa-download text-amber-500 text-sm"></i> .PBIX File
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXCEL SALES ANALYTICS PROJECT -->
+        <div
+          class="project-card border border-slate-200/80 dark:border-slate-700/80 rounded-2xl overflow-hidden bg-white dark:bg-slate-800 flex flex-col justify-between shadow-lg hover:shadow-2xl transition duration-300 group">
+          <div>
+            <div class="relative overflow-hidden">
+              <img src="data analytics project.jpeg" alt="Creative Excel Sales Analytics"
+                class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+              <span
+                class="absolute top-3 left-3 bg-slate-900/85 backdrop-blur-md text-emerald-400 text-xs font-semibold px-3 py-1 rounded-full border border-emerald-500/30 flex items-center gap-1.5">
+                <i class="fas fa-file-excel text-emerald-400"></i> Creative Excel Analytics
+              </span>
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Excel Sales Analytics & Dashboard</h3>
+              <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4">
+                Creative sales analytics project featuring dynamic Pivot Tables, region/category slicers, net profit
+                modeling, data insights, and recommendations.
+              </p>
+              <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500 dark:text-slate-400">
+                <span
+                  class="bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 px-2.5 py-1 rounded-md font-semibold">Pivot
+                  Tables & Slicers</span>
+                <span class="bg-slate-100 dark:bg-slate-700 px-2.5 py-1 rounded-md">Profit Modeling</span>
+                <span class="bg-slate-100 dark:bg-slate-700 px-2.5 py-1 rounded-md">Insights & Recs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0 mt-auto flex flex-col gap-2.5">
+            <button id="openSalesExcelBtn"
+              class="view-project-btn w-full text-center cursor-pointer bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white font-bold py-2.5 px-4 rounded-xl shadow-md transition duration-300 flex items-center justify-center gap-2">
+              <i class="fas fa-table"></i> Interactive Dashboard
+            </button>
+            <div class="grid grid-cols-2 gap-2 text-xs">
+              <a href="Sales_Analytics_Dashboard.xlsx" download
+                class="py-2 px-3 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 rounded-lg text-center font-semibold transition flex items-center justify-center gap-1.5 shadow-sm border border-emerald-500/20">
+                <i class="fas fa-file-excel text-emerald-500 text-sm"></i> Excel .XLSX
+              </a>
+              <a href="Sales_Analytics_Dataset.csv" download
+                class="py-2 px-3 bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-slate-800 dark:text-slate-200 rounded-lg text-center font-semibold transition flex items-center justify-center gap-1.5 shadow-sm">
+                <i class="fas fa-file-csv text-emerald-500 text-sm"></i> Raw CSV
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="project-card border border-slate-200/80 dark:border-slate-700/80 rounded-2xl overflow-hidden bg-white dark:bg-slate-800 flex flex-col justify-between shadow-lg hover:shadow-2xl transition duration-300 group">
+          <div>
+            <div class="relative overflow-hidden">
+              <img src="lms.jpeg" alt="Learning Management System"
+                class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+              <span
+                class="absolute top-3 left-3 bg-slate-900/85 backdrop-blur-md text-purple-400 text-xs font-semibold px-3 py-1 rounded-full border border-purple-500/30">
+                Web Application
+              </span>
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Learning Management System</h3>
+              <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                Full-featured online learning platform with student portal, course modules, and instructor management.
+              </p>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0 mt-auto">
+            <a href="lms.jpeg" target="_blank" class="view-project-btn w-full text-center">
+              View Project <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- VIEW MORE PROJECTS CARD -->
+        <div
+          class="project-card view-more-card border-2 border-dashed border-cyan-500 rounded-2xl p-8 flex flex-col justify-center items-center text-center cursor-pointer group hover:bg-cyan-500/5 transition duration-300"
+          id="openMoreProjectsBtn">
+          <div
+            class="w-16 h-16 rounded-full bg-cyan-500/10 text-cyan-500 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300">
+            <i class="fas fa-plus"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">View More Projects</h3>
+          <p class="text-slate-500 dark:text-slate-300 text-sm mb-6">
+            Click to explore additional software projects, scripts & dashboard solutions.
+          </p>
+          <span class="view-project-btn inline-flex items-center gap-2">
+            Explore All <i class="fas fa-arrow-right"></i>
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- MORE PROJECTS MODAL -->
+  <div id="moreProjectsModal"
+    class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/75 backdrop-blur-md p-4 transition-opacity duration-300">
+    <div
+      class="bg-white dark:bg-slate-900 text-slate-800 dark:text-white w-full max-w-4xl max-h-[90vh] rounded-2xl shadow-2xl overflow-hidden flex flex-col transform transition-all duration-300 scale-95 opacity-0"
+      id="modalContainer">
+      <!-- Modal Header -->
+      <div class="flex justify-between items-center px-6 py-4 bg-slate-900 text-white border-b border-slate-800">
+        <h3 class="text-2xl font-bold flex items-center gap-2">
+          <span class="text-cyan-400"><i class="fas fa-folder-open"></i></span> More Projects
+        </h3>
+        <button id="closeMoreProjectsBtn"
+          class="text-slate-400 hover:text-white text-3xl font-bold transition-colors cursor-pointer">&times;</button>
+      </div>
+
+      <!-- Modal Body (Grid of Additional Projects) -->
+      <div class="p-6 overflow-y-auto space-y-6 flex-grow">
+        <p class="text-slate-600 dark:text-slate-300">Select any project below to view its details or access the project
+          directly:</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 tv:grid-cols-3 gap-6">
+
+          <!-- Additional Project 1 -->
+          <div
+            class="modal-project-card bg-slate-50 dark:bg-slate-800 p-5 rounded-xl border border-slate-200 dark:border-slate-700 flex flex-col justify-between hover:shadow-lg transition">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-semibold px-2.5 py-1 bg-amber-500/10 text-amber-500 rounded-full">Financial
+                  Analytics</span>
+                <span class="text-slate-400 text-xs">Advanced Excel, Power Query</span>
+              </div>
+              <h4 class="text-xl font-bold mb-2 text-slate-900 dark:text-white">Excel Sales & Financial Dashboard</h4>
+              <p class="text-slate-600 dark:text-slate-300 text-sm mb-4">Financial modeling, KPI tracking, dynamic pivot
+                charts, and automated macro-driven summaries for business performance.</p>
+            </div>
+            <a href="portfolio.html"
+              class="view-project-btn text-center text-sm py-2 px-4 rounded-lg bg-cyan-500 hover:bg-cyan-600 text-white font-semibold transition">
+              View Project <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+
+          <!-- Additional Project 2 -->
+          <div
+            class="modal-project-card bg-slate-50 dark:bg-slate-800 p-5 rounded-xl border border-slate-200 dark:border-slate-700 flex flex-col justify-between hover:shadow-lg transition">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-semibold px-2.5 py-1 bg-cyan-500/10 text-cyan-500 rounded-full">Web
+                  Application</span>
+                <span class="text-slate-400 text-xs">HTML, CSS, JavaScript</span>
+              </div>
+              <h4 class="text-xl font-bold mb-2 text-slate-900 dark:text-white">E-Commerce Platform</h4>
+              <p class="text-slate-600 dark:text-slate-300 text-sm mb-4">A responsive online store featuring product
+                catalog filter, shopping cart, and interactive customer checkout workflow.</p>
+            </div>
+            <a href="portfolio.html"
+              class="view-project-btn text-center text-sm py-2 px-4 rounded-lg bg-cyan-500 hover:bg-cyan-600 text-white font-semibold transition">
+              View Project <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+
+          <!-- Additional Project 3-->
+          <div
+            class="modal-project-card bg-slate-50 dark:bg-slate-800 p-5 rounded-xl border border-slate-200 dark:border-slate-700 flex flex-col justify-between hover:shadow-lg transition">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-semibold px-2.5 py-1 bg-green-500/10 text-green-500 rounded-full">IT Support &
+                  System</span>
+                <span class="text-slate-400 text-xs">PHP, MySQL, Bootstrap</span>
+              </div>
+              <h4 class="text-xl font-bold mb-2 text-slate-900 dark:text-white">IT Ticketing & Support Desk</h4>
+              <p class="text-slate-600 dark:text-slate-300 text-sm mb-4">An automated IT service desk application for
+                creating support tickets, tracking resolutions, and managing hardware inventory.</p>
+            </div>
+            <a href="portfolio.html"
+              class="view-project-btn text-center text-sm py-2 px-4 rounded-lg bg-cyan-500 hover:bg-cyan-600 text-white font-semibold transition">
+              View Project <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+
+          <!-- Additional Project 4 -->
+          <div
+            class="modal-project-card bg-slate-50 dark:bg-slate-800 p-5 rounded-xl border border-slate-200 dark:border-slate-700 flex flex-col justify-between hover:shadow-lg transition">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-semibold px-2.5 py-1 bg-purple-500/10 text-purple-500 rounded-full">Data
+                  Automation</span>
+                <span class="text-slate-400 text-xs">Python, Pandas, OpenPyXL</span>
+              </div>
+              <h4 class="text-xl font-bold mb-2 text-slate-900 dark:text-white">Automated Data Pipeline & Scraper</h4>
+              <p class="text-slate-600 dark:text-slate-300 text-sm mb-4">Python script package for extracting market
+                data, cleaning dataset anomalies, and auto-generating executive reports.</p>
+            </div>
+            <a href="portfolio.html"
+              class="view-project-btn text-center text-sm py-2 px-4 rounded-lg bg-cyan-500 hover:bg-cyan-600 text-white font-semibold transition">
+              View Project <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+
+          <!-- Additional Project 5 -->
+          <div
+            class="modal-project-card bg-slate-50 dark:bg-slate-800 p-5 rounded-xl border border-slate-200 dark:border-slate-700 flex flex-col justify-between hover:shadow-lg transition">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-semibold px-2.5 py-1 bg-blue-500/10 text-blue-500 rounded-full">Database
+                  System</span>
+                <span class="text-slate-400 text-xs">SQL, PostgreSQL, Relational DB</span>
+              </div>
+              <h4 class="text-xl font-bold mb-2 text-slate-900 dark:text-white">SQL Database Optimization & Analytics
+              </h4>
+              <p class="text-slate-600 dark:text-slate-300 text-sm mb-4">Database schema architecture, index
+                optimization, complex join queries, and stored procedure creation for business data.</p>
+            </div>
+            <a href="portfolio.html"
+              class="view-project-btn text-center text-sm py-2 px-4 rounded-lg bg-cyan-500 hover:bg-cyan-600 text-white font-semibold transition">
+              View Project <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HR POWER BI INTERACTIVE DASHBOARD MODAL -->
+  <div id="hrPowerBiModal"
+    class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/80 backdrop-blur-md p-3 md:p-6 transition-opacity duration-300">
+    <div
+      class="bg-slate-900 text-white w-full max-w-6xl max-h-[95vh] rounded-2xl shadow-2xl overflow-hidden flex flex-col border border-amber-500/30">
+
+      <!-- Modal Header -->
+      <div class="flex flex-wrap justify-between items-center px-6 py-4 bg-slate-950 border-b border-slate-800 gap-4">
+        <div>
+          <div class="flex items-center gap-3">
+            <span class="p-2 rounded-lg bg-amber-500/20 text-amber-400 text-xl"><i class="fas fa-chart-pie"></i></span>
+            <div>
+              <h3 class="text-xl md:text-2xl font-bold text-white">HR Analytics Power BI Dashboard</h3>
+              <p class="text-slate-400 text-xs md:text-sm">Interactive Workforce Attrition, Income & Demographics
+                Exploration</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="HR_Analytics_Dataset.csv" download
+            class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-amber-400 text-xs font-semibold transition border border-amber-500/30 flex items-center gap-1.5">
+            <i class="fas fa-file-csv"></i> Download CSV
+          </a>
+          <a href="HR_Analytics_Dashboard.pbix" download
+            class="px-3 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold transition flex items-center gap-1.5">
+            <i class="fas fa-download"></i> Download .PBIX
+          </a>
+          <button id="closeHrPowerBiBtn"
+            class="text-slate-400 hover:text-white text-3xl font-bold transition cursor-pointer ml-2">&times;</button>
+        </div>
+      </div>
+
+      <!-- Interactive Controls & Slicers Bar -->
+      <div
+        class="p-4 bg-slate-900/90 border-b border-slate-800 flex flex-wrap items-start justify-between gap-4 text-xs md:text-sm">
+        <div class="flex flex-wrap items-start gap-5">
+
+          <!-- Department Rectangular Slicer Box -->
+          <div>
+            <div class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+              <i class="fas fa-filter"></i> Department Slicer
+            </div>
+            <div id="hrDeptSlicerBox"
+              class="bg-slate-950 border border-slate-800 rounded-xl p-1.5 max-h-32 overflow-y-auto w-52 md:w-60 custom-scrollbar space-y-1">
+              <button data-value="All"
+                class="slicer-btn active w-full text-left px-3 py-1.5 rounded-lg bg-amber-500 text-slate-950 font-bold text-xs transition flex justify-between items-center cursor-pointer shadow-sm">
+                <span>All Departments</span> <i class="fas fa-check text-xs"></i>
+              </button>
+              <button data-value="R&D"
+                class="slicer-btn w-full text-left px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs transition flex justify-between items-center cursor-pointer">
+                <span>R&D</span>
+              </button>
+              <button data-value="Sales"
+                class="slicer-btn w-full text-left px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs transition flex justify-between items-center cursor-pointer">
+                <span>Sales</span>
+              </button>
+              <button data-value="Human Resources"
+                class="slicer-btn w-full text-left px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs transition flex justify-between items-center cursor-pointer">
+                <span>Human Resources</span>
+              </button>
+              <button data-value="Software Engineering"
+                class="slicer-btn w-full text-left px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs transition flex justify-between items-center cursor-pointer">
+                <span>Software Engineering</span>
+              </button>
+              <button data-value="Marketing"
+                class="slicer-btn w-full text-left px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs transition flex justify-between items-center cursor-pointer">
+                <span>Marketing</span>
+              </button>
+              <button data-value="Finance"
+                class="slicer-btn w-full text-left px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs transition flex justify-between items-center cursor-pointer">
+                <span>Finance</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Gender Rectangular Slicer Box -->
+          <div>
+            <div class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+              <i class="fas fa-venus-mars"></i> Gender Slicer
+            </div>
+            <div id="hrGenderSlicerBox"
+              class="bg-slate-950 border border-slate-800 rounded-xl p-1.5 max-h-32 overflow-y-auto w-44 md:w-48 custom-scrollbar space-y-1">
+              <button data-value="All"
+                class="slicer-btn active w-full text-left px-3 py-1.5 rounded-lg bg-amber-500 text-slate-950 font-bold text-xs transition flex justify-between items-center cursor-pointer shadow-sm">
+                <span>All Genders</span> <i class="fas fa-check text-xs"></i>
+              </button>
+              <button data-value="Male"
+                class="slicer-btn w-full text-left px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs transition flex justify-between items-center cursor-pointer">
+                <span>Male</span>
+              </button>
+              <button data-value="Female"
+                class="slicer-btn w-full text-left px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs transition flex justify-between items-center cursor-pointer">
+                <span>Female</span>
+              </button>
+              <button data-value="Non-Binary"
+                class="slicer-btn w-full text-left px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs transition flex justify-between items-center cursor-pointer">
+                <span>Non-Binary</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-slate-400 text-xs flex items-center gap-2 pt-2">
+          <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          Scrollable Panel Slicer Active (500 Records)
+        </div>
+      </div>
+
+      <!-- Dashboard Scrollable Body -->
+      <div class="p-6 overflow-y-auto space-y-6 flex-grow bg-slate-950">
+
+        <!-- KPI Cards Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 shadow-md">
+            <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider block mb-1">Total
+              Employees</span>
+            <span id="hrTotalEmp" class="text-2xl md:text-3xl font-extrabold text-white">500</span>
+            <span class="text-emerald-400 text-xs font-medium block mt-1"><i class="fas fa-users"></i> Active
+              Headcount</span>
+          </div>
+
+          <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 shadow-md">
+            <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider block mb-1">Attrition Rate</span>
+            <span id="hrAttritionRate" class="text-2xl md:text-3xl font-extrabold text-amber-400">14.8%</span>
+            <span class="text-amber-400 text-xs font-medium block mt-1"><i class="fas fa-user-minus"></i> 74
+              Turnovers</span>
+          </div>
+
+          <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 shadow-md">
+            <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider block mb-1">Avg Monthly
+              Salary</span>
+            <span id="hrAvgSalary" class="text-2xl md:text-3xl font-extrabold text-emerald-400">$6,480</span>
+            <span class="text-slate-400 text-xs font-medium block mt-1"><i class="fas fa-dollar-sign"></i> Per
+              Employee</span>
+          </div>
+
+          <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 shadow-md">
+            <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider block mb-1">Avg
+              Satisfaction</span>
+            <span id="hrSatPct" class="text-2xl md:text-3xl font-extrabold text-sky-400">3.18 / 4.0</span>
+            <span class="text-sky-400 text-xs font-medium block mt-1"><i class="fas fa-smile"></i> High Job Score</span>
+          </div>
+        </div>
+
+        <!-- Charts Grid -->
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 shadow-lg">
+            <h4 class="text-base font-bold text-white mb-4 flex items-center justify-between">
+              <span><i class="fas fa-chart-bar text-amber-400 mr-2"></i> Attrition Rate by Department</span>
+              <span class="text-xs font-normal text-slate-400">% Turnover</span>
+            </h4>
+            <div class="h-64">
+              <canvas id="hrDeptChart"></canvas>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 shadow-lg">
+            <h4 class="text-base font-bold text-white mb-4 flex items-center justify-between">
+              <span><i class="fas fa-money-bill-wave text-emerald-400 mr-2"></i> Monthly Income by Department</span>
+              <span class="text-xs font-normal text-slate-400">USD ($)</span>
+            </h4>
+            <div class="h-64">
+              <canvas id="hrSalaryChart"></canvas>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 shadow-lg">
+            <h4 class="text-base font-bold text-white mb-4 flex items-center justify-between">
+              <span><i class="fas fa-clock text-rose-400 mr-2"></i> Attrition vs. Overtime Hours</span>
+              <span class="text-xs font-normal text-slate-400">Workload Risk</span>
+            </h4>
+            <div class="h-64">
+              <canvas id="hrOvertimeChart"></canvas>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 shadow-lg">
+            <h4 class="text-base font-bold text-white mb-4 flex items-center justify-between">
+              <span><i class="fas fa-graduation-cap text-sky-400 mr-2"></i> Education Field Distribution</span>
+              <span class="text-xs font-normal text-slate-400">Demographics</span>
+            </h4>
+            <div class="h-64">
+              <canvas id="hrEduChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- HR Insights & Recommendations Card -->
+        <div class="bg-slate-900 p-6 rounded-xl border border-amber-500/20 shadow-lg">
+          <h4 class="text-lg font-bold text-amber-400 mb-3 flex items-center gap-2">
+            <i class="fas fa-lightbulb"></i> Key HR Data Insights & Executive Recommendations
+          </h4>
+          <div class="grid md:grid-cols-3 gap-4 text-sm">
+            <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+              <h5 class="font-bold text-rose-400 mb-1">1. Overtime Burnout Correlation</h5>
+              <p class="text-slate-300 text-xs leading-relaxed">
+                Employees working regular overtime exhibit a <strong class="text-rose-400">3.4x higher attrition rate
+                  (31.2%)</strong> compared to non-overtime staff (9.1%), indicating significant workload fatigue.
+              </p>
+            </div>
+            <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+              <h5 class="font-bold text-amber-400 mb-1">2. Early Tenure Retention Risk</h5>
+              <p class="text-slate-300 text-xs leading-relaxed">
+                Turnover is heavily concentrated in the <strong class="text-amber-400">1-2 year tenure band</strong>
+                within Sales and Software Engineering departments before employee compensation scales up.
+              </p>
+            </div>
+            <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+              <h5 class="font-bold text-emerald-400 mb-1">3. Strategic Action Plan</h5>
+              <p class="text-slate-300 text-xs leading-relaxed">
+                Implement structured 18-month career progression milestones, flexible hybrid work arrangements, and
+                targeted stay interviews for high-risk roles.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CREATIVE EXCEL SALES ANALYTICS INTERACTIVE DASHBOARD MODAL -->
+  <div id="salesExcelModal"
+    class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/80 backdrop-blur-md p-3 md:p-6 transition-opacity duration-300">
+    <div
+      class="bg-slate-900 text-white w-full max-w-6xl max-h-[95vh] rounded-2xl shadow-2xl overflow-hidden flex flex-col border border-emerald-500/30">
+
+      <!-- Modal Header -->
+      <div class="flex flex-wrap justify-between items-center px-6 py-4 bg-slate-950 border-b border-slate-800 gap-4">
+        <div>
+          <div class="flex items-center gap-3">
+            <span class="p-2 rounded-lg bg-emerald-500/20 text-emerald-400 text-xl"><i
+                class="fas fa-file-excel"></i></span>
+            <div>
+              <h3 class="text-xl md:text-2xl font-bold text-white">Creative Excel Sales Analytics Project</h3>
+              <p class="text-slate-400 text-xs md:text-sm">Interactive Excel Model, Pivot Tables, Revenue Modeling &
+                Strategic Insights</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="Sales_Analytics_Dataset.csv" download
+            class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-emerald-400 text-xs font-semibold transition border border-emerald-500/30 flex items-center gap-1.5">
+            <i class="fas fa-file-csv"></i> Download Raw CSV
+          </a>
+          <a href="Sales_Analytics_Dashboard.xlsx" download
+            class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition flex items-center gap-1.5 shadow-md">
+            <i class="fas fa-download"></i> Download Excel (.XLSX)
+          </a>
+          <button id="closeSalesExcelBtn"
+            class="text-slate-400 hover:text-white text-3xl font-bold transition cursor-pointer ml-2">&times;</button>
+        </div>
+      </div>
+
+      <!-- Excel Tab Navigation Simulator -->
+      <div
+        class="flex border-b border-slate-800 bg-slate-900 px-4 sm:px-6 gap-2 pt-2 text-xs font-semibold overflow-x-auto whitespace-nowrap custom-scrollbar">
+        <button id="tabExecutiveBtn"
+          class="py-2.5 px-4 rounded-t-lg bg-emerald-600 text-white border-t-2 border-emerald-400 transition cursor-pointer flex items-center gap-2">
+          <i class="fas fa-chart-line"></i> Executive Dashboard
+        </button>
+        <button id="tabPivotBtn"
+          class="py-2.5 px-4 rounded-t-lg bg-slate-800 text-slate-400 hover:text-white transition cursor-pointer flex items-center gap-2">
+          <i class="fas fa-table"></i> Pivot Tables
+        </button>
+        <button id="tabRawDataBtn"
+          class="py-2.5 px-4 rounded-t-lg bg-slate-800 text-slate-400 hover:text-white transition cursor-pointer flex items-center gap-2">
+          <i class="fas fa-database"></i> Raw Data (650 Rows)
+        </button>
+        <button id="tabInsightsBtn"
+          class="py-2.5 px-4 rounded-t-lg bg-slate-800 text-slate-400 hover:text-white transition cursor-pointer flex items-center gap-2">
+          <i class="fas fa-lightbulb"></i> Insights & Recs
+        </button>
+      </div>
+
+      <!-- Dashboard Body -->
+      <div class="p-6 overflow-y-auto space-y-6 flex-grow bg-slate-950">
+
+        <!-- TAB 1: EXECUTIVE DASHBOARD -->
+        <div id="tabExecutiveContent" class="space-y-6">
+
+          <!-- Slicers Bar -->
+          <div
+            class="p-4 bg-slate-900 rounded-xl border border-slate-800 flex flex-wrap items-start justify-between gap-4 text-xs md:text-sm">
+            <div class="flex flex-wrap items-start gap-5">
+
+              <!-- Region Rectangular Slicer Box -->
+              <div>
+                <div
+                  class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                  <i class="fas fa-globe"></i> Region Slicer
+                </div>
+                <div id="salesRegionSlicerBox"
+                  class="bg-slate-950 border border-slate-800 rounded-xl p-1.5 max-h-32 overflow-y-auto w-52 md:w-60 custom-scrollbar space-y-1">
+                  <button data-value="All"
+                    class="slicer-btn active w-full text-left px-3 py-1.5 rounded-lg bg-emerald-600 text-white font-bold text-xs transition flex justify-between items-center cursor-pointer shadow-sm">
+                    <span>All Regions</span> <i class="fas fa-check text-xs"></i>
+                  </button>
+                  <button data-value="North America"
+                    class="slicer-btn w-full text-left px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs transition flex justify-between items-center cursor-pointer">
+                    <span>North America</span>
+                  </button>
+                  <button data-value="Europe"
+                    class="slicer-btn w-full text-left px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs transition flex justify-between items-center cursor-pointer">
+                    <span>Europe</span>
+                  </button>
+                  <button data-value="Asia Pacific"
+                    class="slicer-btn w-full text-left px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs transition flex justify-between items-center cursor-pointer">
+                    <span>Asia Pacific</span>
+                  </button>
+                  <button data-value="Latin America"
+                    class="slicer-btn w-full text-left px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs transition flex justify-between items-center cursor-pointer">
+                    <span>Latin America</span>
+                  </button>
+                  <button data-value="Middle East"
+                    class="slicer-btn w-full text-left px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs transition flex justify-between items-center cursor-pointer">
+                    <span>Middle East</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Product Category Rectangular Slicer Box -->
+              <div>
+                <div
+                  class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                  <i class="fas fa-boxes"></i> Category Slicer
+                </div>
+                <div id="salesCategorySlicerBox"
+                  class="bg-slate-950 border border-slate-800 rounded-xl p-1.5 max-h-32 overflow-y-auto w-48 md:w-52 custom-scrollbar space-y-1">
+                  <button data-value="All"
+                    class="slicer-btn active w-full text-left px-3 py-1.5 rounded-lg bg-emerald-600 text-white font-bold text-xs transition flex justify-between items-center cursor-pointer shadow-sm">
+                    <span>All Categories</span> <i class="fas fa-check text-xs"></i>
+                  </button>
+                  <button data-value="Hardware"
+                    class="slicer-btn w-full text-left px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs transition flex justify-between items-center cursor-pointer">
+                    <span>Hardware</span>
+                  </button>
+                  <button data-value="Software"
+                    class="slicer-btn w-full text-left px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs transition flex justify-between items-center cursor-pointer">
+                    <span>Software</span>
+                  </button>
+                  <button data-value="Cloud Services"
+                    class="slicer-btn w-full text-left px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs transition flex justify-between items-center cursor-pointer">
+                    <span>Cloud Services</span>
+                  </button>
+                  <button data-value="Services"
+                    class="slicer-btn w-full text-left px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 text-xs transition flex justify-between items-center cursor-pointer">
+                    <span>Services</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="text-emerald-400 text-xs font-semibold flex items-center gap-1.5 pt-2">
+              <i class="fas fa-sync-alt"></i> Scrollable Pivot Slicer Simulation
+            </div>
+          </div>
+
+          <!-- KPI Cards Grid -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 shadow-md">
+              <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider block mb-1">Gross
+                Revenue</span>
+              <span id="salesTotalRev" class="text-2xl md:text-3xl font-extrabold text-emerald-400">$1,842,500</span>
+              <span class="text-emerald-400 text-xs font-medium block mt-1"><i class="fas fa-arrow-up"></i> Total
+                Annual</span>
+            </div>
+
+            <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 shadow-md">
+              <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider block mb-1">Net Profit</span>
+              <span id="salesNetProfit" class="text-2xl md:text-3xl font-extrabold text-sky-400">$812,300</span>
+              <span class="text-sky-400 text-xs font-medium block mt-1"><i class="fas fa-coins"></i> Bottom Line</span>
+            </div>
+
+            <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 shadow-md">
+              <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider block mb-1">Avg Profit
+                Margin</span>
+              <span id="salesMarginPct" class="text-2xl md:text-3xl font-extrabold text-amber-400">44.1%</span>
+              <span class="text-amber-400 text-xs font-medium block mt-1"><i class="fas fa-percentage"></i> High
+                Efficiency</span>
+            </div>
+
+            <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 shadow-md">
+              <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider block mb-1">Total Orders</span>
+              <span id="salesTotalOrders" class="text-2xl md:text-3xl font-extrabold text-purple-400">650</span>
+              <span class="text-purple-400 text-xs font-medium block mt-1"><i class="fas fa-receipt"></i>
+                Transactions</span>
+            </div>
+          </div>
+
+          <!-- Charts -->
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 shadow-lg">
+              <h4 class="text-base font-bold text-white mb-4 flex items-center justify-between">
+                <span><i class="fas fa-chart-bar text-emerald-400 mr-2"></i> Regional Sales & Profitability</span>
+                <span class="text-xs font-normal text-slate-400">USD ($)</span>
+              </h4>
+              <div class="h-64">
+                <canvas id="salesRegionChart"></canvas>
+              </div>
+            </div>
+
+            <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 shadow-lg">
+              <h4 class="text-base font-bold text-white mb-4 flex items-center justify-between">
+                <span><i class="fas fa-chart-pie text-sky-400 mr-2"></i> Revenue Share by Category</span>
+                <span class="text-xs font-normal text-slate-400">% Share</span>
+              </h4>
+              <div class="h-64">
+                <canvas id="salesCategoryChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: PIVOT TABLES -->
+        <div id="tabPivotContent" class="hidden space-y-6">
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 shadow-lg">
+            <h4 class="text-lg font-bold text-emerald-400 mb-4 flex items-center gap-2">
+              <i class="fas fa-table"></i> Pivot Summary: Sales Representative Performance Leaderboard
+            </h4>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs md:text-sm text-slate-300">
+                <thead class="bg-slate-800 text-slate-200 uppercase font-semibold text-xs border-b border-slate-700">
+                  <tr>
+                    <th class="p-3">Sales Representative</th>
+                    <th class="p-3 text-center">Total Orders</th>
+                    <th class="p-3 text-right">Units Sold</th>
+                    <th class="p-3 text-right">Gross Revenue ($)</th>
+                    <th class="p-3 text-right">Net Profit ($)</th>
+                    <th class="p-3 text-right">Margin (%)</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-800">
+                  <tr class="hover:bg-slate-800/50">
+                    <td class="p-3 font-semibold text-white">Sarah Jenkins</td>
+                    <td class="p-3 text-center">88</td>
+                    <td class="p-3 text-right">1,940</td>
+                    <td class="p-3 text-right text-emerald-400 font-semibold">$264,800</td>
+                    <td class="p-3 text-right text-sky-400 font-semibold">$121,500</td>
+                    <td class="p-3 text-right text-amber-400 font-bold">45.9%</td>
+                  </tr>
+                  <tr class="hover:bg-slate-800/50">
+                    <td class="p-3 font-semibold text-white">Michael Chang</td>
+                    <td class="p-3 text-center">84</td>
+                    <td class="p-3 text-right">1,820</td>
+                    <td class="p-3 text-right text-emerald-400 font-semibold">$248,300</td>
+                    <td class="p-3 text-right text-sky-400 font-semibold">$114,200</td>
+                    <td class="p-3 text-right text-amber-400 font-bold">46.0%</td>
+                  </tr>
+                  <tr class="hover:bg-slate-800/50">
+                    <td class="p-3 font-semibold text-white">David Miller</td>
+                    <td class="p-3 text-center">82</td>
+                    <td class="p-3 text-right">1,790</td>
+                    <td class="p-3 text-right text-emerald-400 font-semibold">$239,100</td>
+                    <td class="p-3 text-right text-sky-400 font-semibold">$105,800</td>
+                    <td class="p-3 text-right text-amber-400 font-bold">44.2%</td>
+                  </tr>
+                  <tr class="hover:bg-slate-800/50">
+                    <td class="p-3 font-semibold text-white">Elena Rostova</td>
+                    <td class="p-3 text-center">79</td>
+                    <td class="p-3 text-right">1,650</td>
+                    <td class="p-3 text-right text-emerald-400 font-semibold">$225,400</td>
+                    <td class="p-3 text-right text-sky-400 font-semibold">$98,600</td>
+                    <td class="p-3 text-right text-amber-400 font-bold">43.7%</td>
+                  </tr>
+                  <tr class="hover:bg-slate-800/50">
+                    <td class="p-3 font-semibold text-white">Kwame Mensah</td>
+                    <td class="p-3 text-center">81</td>
+                    <td class="p-3 text-right">1,710</td>
+                    <td class="p-3 text-right text-emerald-400 font-semibold">$228,900</td>
+                    <td class="p-3 text-right text-sky-400 font-semibold">$99,400</td>
+                    <td class="p-3 text-right text-amber-400 font-bold">43.4%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: RAW DATA PREVIEW -->
+        <div id="tabRawDataContent" class="hidden space-y-6">
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 shadow-lg">
+            <h4 class="text-lg font-bold text-sky-400 mb-4 flex items-center gap-2">
+              <i class="fas fa-database"></i> Sales Raw Dataset Sample (First 5 Rows of 650)
+            </h4>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs text-slate-300">
+                <thead class="bg-slate-800 text-slate-200 uppercase font-semibold border-b border-slate-700">
+                  <tr>
+                    <th class="p-2.5">OrderID</th>
+                    <th class="p-2.5">Date</th>
+                    <th class="p-2.5">Region</th>
+                    <th class="p-2.5">SalesRep</th>
+                    <th class="p-2.5">Category</th>
+                    <th class="p-2.5">Product</th>
+                    <th class="p-2.5 text-right">Price</th>
+                    <th class="p-2.5 text-right">Units</th>
+                    <th class="p-2.5 text-right">Revenue</th>
+                    <th class="p-2.5 text-right">Profit</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-800">
+                  <tr>
+                    <td class="p-2.5 text-emerald-400 font-mono">ORD-2024-1001</td>
+                    <td class="p-2.5">2024-01-15</td>
+                    <td class="p-2.5">North America</td>
+                    <td class="p-2.5">Sarah Jenkins</td>
+                    <td class="p-2.5">Hardware</td>
+                    <td class="p-2.5">Hardware Workstation Z</td>
+                    <td class="p-2.5 text-right">$2,400</td>
+                    <td class="p-2.5 text-right">12</td>
+                    <td class="p-2.5 text-right font-semibold text-white">$28,800</td>
+                    <td class="p-2.5 text-right text-emerald-400">$12,000</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2.5 text-emerald-400 font-mono">ORD-2024-1002</td>
+                    <td class="p-2.5">2024-01-22</td>
+                    <td class="p-2.5">Europe</td>
+                    <td class="p-2.5">Michael Chang</td>
+                    <td class="p-2.5">Software</td>
+                    <td class="p-2.5">Business Analytics Pro</td>
+                    <td class="p-2.5 text-right">$450</td>
+                    <td class="p-2.5 text-right">30</td>
+                    <td class="p-2.5 text-right font-semibold text-white">$13,500</td>
+                    <td class="p-2.5 text-right text-emerald-400">$9,900</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2.5 text-emerald-400 font-mono">ORD-2024-1003</td>
+                    <td class="p-2.5">2024-02-05</td>
+                    <td class="p-2.5">Asia Pacific</td>
+                    <td class="p-2.5">Elena Rostova</td>
+                    <td class="p-2.5">Cloud Services</td>
+                    <td class="p-2.5">Enterprise Cloud Server</td>
+                    <td class="p-2.5 text-right">$1,200</td>
+                    <td class="p-2.5 text-right">18</td>
+                    <td class="p-2.5 text-right font-semibold text-white">$21,600</td>
+                    <td class="p-2.5 text-right text-emerald-400">$13,500</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2.5 text-emerald-400 font-mono">ORD-2024-1004</td>
+                    <td class="p-2.5">2024-02-18</td>
+                    <td class="p-2.5">Latin America</td>
+                    <td class="p-2.5">Carlos Benitez</td>
+                    <td class="p-2.5">Services</td>
+                    <td class="p-2.5">IT Managed Support Plan</td>
+                    <td class="p-2.5 text-right">$1,500</td>
+                    <td class="p-2.5 text-right">8</td>
+                    <td class="p-2.5 text-right font-semibold text-white">$12,000</td>
+                    <td class="p-2.5 text-right text-emerald-400">$7,200</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2.5 text-emerald-400 font-mono">ORD-2024-1005</td>
+                    <td class="p-2.5">2024-03-01</td>
+                    <td class="p-2.5">Middle East</td>
+                    <td class="p-2.5">Anita Sharma</td>
+                    <td class="p-2.5">Software</td>
+                    <td class="p-2.5">Security Suite AI</td>
+                    <td class="p-2.5 text-right">$850</td>
+                    <td class="p-2.5 text-right">25</td>
+                    <td class="p-2.5 text-right font-semibold text-white">$21,250</td>
+                    <td class="p-2.5 text-right text-emerald-400">$14,250</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 4: INSIGHTS & RECOMMENDATIONS -->
+        <div id="tabInsightsContent" class="hidden space-y-6">
+          <div class="bg-slate-900 p-6 rounded-xl border border-emerald-500/20 shadow-lg">
+            <h4 class="text-lg font-bold text-emerald-400 mb-4 flex items-center gap-2">
+              <i class="fas fa-lightbulb"></i> Business Data Insights & Executive Recommendations
+            </h4>
+
+            <div class="grid md:grid-cols-2 gap-6 text-sm">
+              <div class="space-y-4">
+                <h5 class="font-bold text-white text-base border-b border-slate-800 pb-2">Key Business Findings</h5>
+                <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+                  <h6 class="font-bold text-emerald-400 mb-1">• Hardware & Cloud Drive Volume</h6>
+                  <p class="text-slate-300 text-xs leading-relaxed">
+                    Enterprise Cloud Servers & Hardware Workstations generate <strong>58.4% of total revenue</strong>.
+                    Unit contract values range from $1,200 to $2,400.
+                  </p>
+                </div>
+                <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+                  <h6 class="font-bold text-sky-400 mb-1">• Software Delivers Top Margins</h6>
+                  <p class="text-slate-300 text-xs leading-relaxed">
+                    Software products (Business Analytics Pro & Security Suite AI) deliver net profit margins exceeding
+                    <strong>68% to 73%</strong> due to low marginal distribution costs.
+                  </p>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <h5 class="font-bold text-white text-base border-b border-slate-800 pb-2">Strategic Recommendations</h5>
+                <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+                  <h6 class="font-bold text-amber-400 mb-1">1. Hardware & Service Bundling</h6>
+                  <p class="text-slate-300 text-xs leading-relaxed">
+                    Mandate the inclusion of an IT Managed Support Plan with hardware sales to increase average
+                    transaction net margin by <strong>+18%</strong>.
+                  </p>
+                </div>
+                <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+                  <h6 class="font-bold text-purple-400 mb-1">2. Commission Incentive Alignment</h6>
+                  <p class="text-slate-300 text-xs leading-relaxed">
+                    Shift quarterly sales rep commission structures from gross revenue volume to <strong>Net Profit
+                      contribution</strong> to encourage selling higher-margin software solutions.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- REVIEWS -->
+
+  <section id="reviews" class="py-24 bg-slate-50/70 dark:bg-slate-900/70 transition-colors">
+
+    <div class="container mx-auto px-6">
+
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span
+          class="inline-block px-4 py-1.5 rounded-full bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 font-semibold text-sm uppercase tracking-wider mb-3">
+          Testimonials
+        </span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white">
+          Client <span class="text-cyan-500">Reviews & Ratings</span>
+        </h2>
+        <p class="text-slate-600 dark:text-slate-300 text-base mt-3">
+          Feedback from clients and project collaborators on delivered solutions.
+        </p>
+        <div class="w-20 h-1.5 bg-gradient-to-r from-cyan-500 to-emerald-400 rounded-full mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 tv:grid-cols-4 gap-6">
+
+        <div
+          class="review-card bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200/80 dark:border-slate-700/80 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 relative overflow-hidden flex flex-col justify-between">
+          <i
+            class="fas fa-quote-right absolute right-4 bottom-4 text-slate-200/60 dark:text-slate-700/40 text-5xl pointer-events-none"></i>
+          <div>
+            <div class="text-amber-400 text-lg mb-4 space-x-1">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed italic mb-6 relative z-10">
+              "Professional and reliable service. Emmanuel delivered exact project requirements ahead of schedule."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 border-t border-slate-100 dark:border-slate-700 pt-4 mt-auto">
+            <div
+              class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-500 font-bold flex items-center justify-center text-sm">
+              CL
+            </div>
+            <div>
+              <h4 class="text-slate-900 dark:text-white font-bold text-sm">Corporate Client</h4>
+              <p class="text-slate-500 dark:text-slate-400 text-xs">Web Development</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="review-card bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200/80 dark:border-slate-700/80 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 relative overflow-hidden flex flex-col justify-between">
+          <i
+            class="fas fa-quote-right absolute right-4 bottom-4 text-slate-200/60 dark:text-slate-700/40 text-5xl pointer-events-none"></i>
+          <div>
+            <div class="text-amber-400 text-lg mb-4 space-x-1">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed italic mb-6 relative z-10">
+              "Excellent dashboard development skills. Power BI visualizations made complex business data very easy to
+              analyze."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 border-t border-slate-100 dark:border-slate-700 pt-4 mt-auto">
+            <div
+              class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-500 font-bold flex items-center justify-center text-sm">
+              IN
+            </div>
+            <div>
+              <h4 class="text-slate-900 dark:text-white font-bold text-sm">idealNovate Associate</h4>
+              <p class="text-slate-500 dark:text-slate-400 text-xs">Data Analytics</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="review-card bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200/80 dark:border-slate-700/80 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 relative overflow-hidden flex flex-col justify-between">
+          <i
+            class="fas fa-quote-right absolute right-4 bottom-4 text-slate-200/60 dark:text-slate-700/40 text-5xl pointer-events-none"></i>
+          <div>
+            <div class="text-amber-400 text-lg mb-4 space-x-1">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed italic mb-6 relative z-10">
+              "Outstanding web design solutions. The website interface is clean, modern, mobile-responsive, and super
+              fast."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 border-t border-slate-100 dark:border-slate-700 pt-4 mt-auto">
+            <div
+              class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-500 font-bold flex items-center justify-center text-sm">
+              ED
+            </div>
+            <div>
+              <h4 class="text-slate-900 dark:text-white font-bold text-sm">Digital Agency</h4>
+              <p class="text-slate-500 dark:text-slate-400 text-xs">UI/UX & Web</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="review-card bg-white dark:bg-slate-800 p-8 rounded-2xl border border-slate-200/80 dark:border-slate-700/80 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 relative overflow-hidden flex flex-col justify-between">
+          <i
+            class="fas fa-quote-right absolute right-4 bottom-4 text-slate-200/60 dark:text-slate-700/40 text-5xl pointer-events-none"></i>
+          <div>
+            <div class="text-amber-400 text-lg mb-4 space-x-1">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed italic mb-6 relative z-10">
+              "Reliable learning management system with admin login, student login, instructor login, and crucial
+              workflow features."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 border-t border-slate-100 dark:border-slate-700 pt-4 mt-auto">
+            <div
+              class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-500 font-bold flex items-center justify-center text-sm">
+              LM
+            </div>
+            <div>
+              <h4 class="text-slate-900 dark:text-white font-bold text-sm">E-Learning Client</h4>
+              <p class="text-slate-500 dark:text-slate-400 text-xs">LMS Platform</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT SECTION -->
+
+  <section id="contact" class="bg-slate-900 text-white py-24 relative overflow-hidden">
+
+    <!-- Ambient background glow elements -->
+    <div class="absolute top-1/4 left-10 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 right-10 w-96 h-96 bg-green-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="container mx-auto px-6 relative z-10">
+
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">
+          Get In <span class="text-cyan-400">Touch</span>
+        </h2>
+        <p class="text-slate-300 text-lg">
+          Have a project in mind, a business query, or want to collaborate? Send me a message below or reach out
+          directly!
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-12 items-start">
+
+        <!-- Left Column: Contact Cards & Info (5 cols) -->
+        <div class="lg:col-span-5 space-y-6">
+
+          <div
+            class="bg-slate-800/80 backdrop-blur-md border border-slate-700 p-6 rounded-2xl flex items-start gap-5 hover:border-cyan-500/50 transition duration-300 shadow-xl">
+            <div
+              class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl flex-shrink-0">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4 class="text-slate-400 text-sm font-semibold uppercase tracking-wider mb-1">Email Address</h4>
+              <a href="mailto:emmanuelkasivu224@gmail.com"
+                class="text-white font-medium hover:text-cyan-400 transition text-base md:text-lg break-all">
+                emmanuelkasivu224@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-slate-800/80 backdrop-blur-md border border-slate-700 p-6 rounded-2xl flex items-start gap-5 hover:border-green-500/50 transition duration-300 shadow-xl">
+            <div
+              class="w-12 h-12 rounded-xl bg-green-500/10 border border-green-500/30 flex items-center justify-center text-green-400 text-2xl flex-shrink-0">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div>
+              <h4 class="text-slate-400 text-sm font-semibold uppercase tracking-wider mb-1">Phone / WhatsApp</h4>
+              <a href="https://wa.me/254116089094" target="_blank"
+                class="text-white font-medium hover:text-green-400 transition text-base md:text-lg">
+                +254 116 089 094
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-slate-800/80 backdrop-blur-md border border-slate-700 p-6 rounded-2xl flex items-start gap-5 hover:border-purple-500/50 transition duration-300 shadow-xl">
+            <div
+              class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl flex-shrink-0">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4 class="text-slate-400 text-sm font-semibold uppercase tracking-wider mb-1">Location</h4>
+              <p class="text-white font-medium text-base md:text-lg">
+                Thika, Kenya
+              </p>
+            </div>
+          </div>
+
+          <!-- Availability & Social Badge -->
+          <div class="bg-slate-800/80 backdrop-blur-md border border-slate-700 p-6 rounded-2xl shadow-xl">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="relative flex h-3 w-3">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+              </span>
+              <span class="text-emerald-400 text-sm font-semibold">Available for Work & Freelance</span>
+            </div>
+            <p class="text-slate-300 text-sm mb-6">
+              Connect with me across social platforms:
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="https://linkedin.com/in/emmanuelkasivu224" target="_blank"
+                class="w-11 h-11 rounded-xl bg-slate-700 hover:bg-cyan-500 text-slate-300 hover:text-white flex items-center justify-center text-xl transition duration-300"
+                title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/emmanuelkasivu224-source" target="_blank"
+                class="w-11 h-11 rounded-xl bg-slate-700 hover:bg-slate-900 text-slate-300 hover:text-white flex items-center justify-center text-xl transition duration-300"
+                title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://x.com/EngManuh_018" target="_blank"
+                class="w-11 h-11 rounded-xl bg-slate-700 hover:bg-slate-950 text-slate-300 hover:text-white flex items-center justify-center text-xl transition duration-300"
+                title="X (Twitter)">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              <a href="https://wa.me/254116089094" target="_blank"
+                class="w-11 h-11 rounded-xl bg-slate-700 hover:bg-green-600 text-slate-300 hover:text-white flex items-center justify-center text-xl transition duration-300"
+                title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="mailto:emmanuelkasivu224@gmail.com"
+                class="w-11 h-11 rounded-xl bg-slate-700 hover:bg-rose-600 text-slate-300 hover:text-white flex items-center justify-center text-xl transition duration-300"
+                title="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Interactive Form (7 cols) -->
+        <div
+          class="lg:col-span-7 bg-slate-800/90 backdrop-blur-md border border-slate-700 p-8 md:p-10 rounded-2xl shadow-2xl">
+          <h3 class="text-2xl font-bold mb-6 text-white flex items-center gap-3">
+            <i class="fas fa-paper-plane text-cyan-400"></i> Send Me a Message
+          </h3>
+
+          <!-- Response Alert Banners -->
+          <div id="contactFormAlert"
+            class="hidden mb-6 p-4 rounded-xl text-sm flex items-start gap-3 transition-all duration-300">
+            <i id="contactFormAlertIcon" class="fas text-lg mt-0.5"></i>
+            <div id="contactFormAlertMessage"></div>
+          </div>
+
+          <form id="contactForm" class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <!-- Name Input -->
+              <div>
+                <label for="name" class="block text-slate-300 text-sm font-medium mb-2">Your Name <span
+                    class="text-cyan-400">*</span></label>
+                <div class="relative">
+                  <input type="text" id="name" name="name" required placeholder="e.g. John Doe"
+                    class="w-full bg-slate-900/80 border border-slate-700 text-white rounded-xl px-4 py-3.5 pl-11 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition placeholder-slate-500">
+                  <i class="fas fa-user absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 text-sm"></i>
+                </div>
+              </div>
+
+              <!-- Email Input -->
+              <div>
+                <label for="email" class="block text-slate-300 text-sm font-medium mb-2">Your Email <span
+                    class="text-cyan-400">*</span></label>
+                <div class="relative">
+                  <input type="email" id="email" name="email" required placeholder="john@example.com"
+                    class="w-full bg-slate-900/80 border border-slate-700 text-white rounded-xl px-4 py-3.5 pl-11 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition placeholder-slate-500">
+                  <i class="fas fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 text-sm"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Subject Select -->
+            <div>
+              <label for="subject" class="block text-slate-300 text-sm font-medium mb-2">Subject / Interested
+                Service</label>
+              <div class="relative">
+                <select id="subject" name="subject"
+                  class="w-full bg-slate-900/80 border border-slate-700 text-white rounded-xl px-4 py-3.5 pl-11 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition appearance-none">
+                  <option value="Web Development Project">Web Development Project</option>
+                  <option value="Data Analytics & Dashboards">Data Analytics & Dashboards</option>
+                  <option value="Power BI Solution">Power BI Solution</option>
+                  <option value="IT Support & Troubleshooting">IT Support & Troubleshooting</option>
+                  <option value="General Inquiry">General Inquiry / Job Opportunity</option>
+                </select>
+                <i class="fas fa-tag absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 text-sm"></i>
+                <i
+                  class="fas fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 text-xs pointer-events-none"></i>
+              </div>
+            </div>
+
+            <!-- Message Textarea -->
+            <div>
+              <label for="message" class="block text-slate-300 text-sm font-medium mb-2">Message <span
+                  class="text-cyan-400">*</span></label>
+              <div class="relative">
+                <textarea id="message" name="message" rows="5" required placeholder="Write your message details here..."
+                  class="w-full bg-slate-900/80 border border-slate-700 text-white rounded-xl px-4 py-3.5 pl-11 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition placeholder-slate-500 resize-none"></textarea>
+                <i class="fas fa-comment-alt absolute left-4 top-5 text-slate-500 text-sm"></i>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submitBtn"
+              class="w-full bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700 text-white font-semibold py-4 px-8 rounded-xl transition duration-300 flex items-center justify-center gap-3 shadow-lg shadow-cyan-500/25 cursor-pointer">
+              <span id="btnText">Send Message</span>
+              <i id="btnIcon" class="fas fa-paper-plane"></i>
+              <div id="btnSpinner"
+                class="hidden w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="bg-black text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- About -->
+        <div>
+          <h3 class="text-2xl font-bold mb-4 text-cyan-400">
+            Emmanuel Kasivu
+          </h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Information Technology Professional, Data Analyst, Web Developer, and IT Support Specialist dedicated to
+            creating modern digital solutions.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">
+            Quick Links
+          </h3>
+          <ul class="space-y-2 text-slate-400 text-sm">
+            <li><a href="#home" class="hover:text-cyan-400 transition">Home</a></li>
+            <li><a href="#about" class="hover:text-cyan-400 transition">About</a></li>
+            <li><a href="#services" class="hover:text-cyan-400 transition">Services</a></li>
+            <li><a href="#skills" class="hover:text-cyan-400 transition">Skills</a></li>
+            <li><a href="#projects" class="hover:text-cyan-400 transition">Projects</a></li>
+            <li><a href="#contact" class="hover:text-cyan-400 transition">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">
+            Contact Info
+          </h3>
+          <div class="space-y-2 text-slate-400 text-sm">
+            <p><i class="fas fa-envelope text-cyan-400 mr-2"></i> emmanuelkasivu224@gmail.com</p>
+            <p><i class="fas fa-phone text-cyan-400 mr-2"></i> +254 116 089 094</p>
+            <p><i class="fas fa-map-marker-alt text-cyan-400 mr-2"></i> Thika, Kenya</p>
+          </div>
+          <div class="flex gap-4 mt-4">
+            <a href="https://github.com/emmanuelkasivu224-source" target="_blank"
+              class="text-slate-400 hover:text-cyan-400 transition text-xl">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/emmanuelkasivu224" target="_blank"
+              class="text-slate-400 hover:text-cyan-400 transition text-xl">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/254116089094" target="_blank"
+              class="text-slate-400 hover:text-green-400 transition text-xl">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="my-8 border-slate-800">
+
+      <p class="text-center text-slate-500 text-sm">
+        © 2026 Emmanuel Kasivu. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

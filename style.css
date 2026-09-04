@@ -1,0 +1,818 @@
+/* ==========================
+   GLOBAL SETTINGS
+========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #eaeff3;
+  color: #1e293b;
+  line-height: 1.7;
+  transition: .4s;
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+nav {
+  backdrop-filter: blur(10px);
+}
+
+nav ul li a {
+  position: relative;
+  transition: .3s;
+}
+
+nav ul li a:hover {
+  color: #06b6d4;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #06b6d4;
+  left: 0;
+  bottom: -5px;
+  transition: .3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+#home {
+  background:
+    linear-gradient(rgba(15, 23, 42, .90),
+      rgba(15, 23, 42, .90)),
+    url('../images/hero-bg.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#home h1 {
+  animation: slideDown 1s ease;
+}
+
+#home p {
+  animation: fadeIn 2s ease;
+}
+
+@keyframes slideDown {
+
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.btn {
+  padding: 12px 30px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: .4s;
+}
+
+.btn-primary {
+  background: #06b6d4;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #0891b2;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: black;
+}
+
+/* ==========================
+   ABOUT SECTION
+========================== */
+
+#about img {
+  transition: .5s;
+}
+
+#about img:hover {
+  transform: scale(1.03);
+}
+
+#about .shadow-lg {
+  transition: .4s;
+}
+
+#about .shadow-lg:hover {
+  transform: translateY(-8px);
+}
+
+/* ==========================
+   STATISTICS
+========================== */
+
+.stats-box {
+
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+  transition: .4s;
+
+}
+
+.stats-box:hover {
+
+  transform: translateY(-10px);
+
+}
+
+/* ==========================
+   SERVICES
+========================== */
+
+.service-card {
+
+  transition: .4s;
+
+}
+
+.service-card:hover {
+
+  transform: translateY(-8px);
+
+}
+
+/* ==========================
+   SKILLS
+========================== */
+
+.progress {
+
+  width: 100%;
+  height: 10px;
+  background: #e2e8f0;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-bottom: 0;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+
+}
+
+.progress span {
+
+  display: block;
+  height: 100%;
+  background-image:
+    linear-gradient(45deg,
+      rgba(255, 255, 255, 0.15) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0.15) 75%,
+      transparent 75%,
+      transparent),
+    linear-gradient(90deg,
+      #06b6d4,
+      #0891b2);
+  background-size: 30px 30px, 100% 100%;
+  border-radius: 50px;
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: move-stripes 1s linear infinite;
+  box-shadow: 0 2px 4px rgba(6, 182, 212, 0.3);
+
+}
+
+@keyframes move-stripes {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+
+  100% {
+    background-position: 30px 0, 0 0;
+  }
+}
+
+/* ==========================
+   PROJECTS
+========================== */
+
+.project-card {
+
+  transition: .4s;
+
+}
+
+.project-card:hover {
+
+  transform: translateY(-8px);
+
+}
+
+.view-project-btn {
+
+  display: inline-block;
+  background: #06b6d4;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s ease;
+  box-shadow: 0 4px 12px rgba(6, 182, 212, .25);
+
+}
+
+.view-project-btn:hover {
+
+  background: #0891b2;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(6, 182, 212, .4);
+
+}
+
+.view-more-card {
+
+  min-height: 300px;
+  border: 2px dashed #06b6d4;
+
+}
+
+.view-more-card:hover {
+
+  border-color: #0891b2;
+  background: rgba(6, 182, 212, .03);
+
+}
+
+.dark-mode .view-more-card {
+
+  border-color: #06b6d4;
+
+}
+
+/* ==========================
+   REVIEWS
+========================== */
+
+.review-card {
+
+  transition: .4s;
+
+}
+
+.review-card:hover {
+
+  transform: translateY(-6px);
+
+}
+
+/* ==========================
+   CONTACT SECTION
+========================== */
+
+#contact {
+  position: relative;
+}
+
+#contact input,
+#contact select,
+#contact textarea {
+  transition: all 0.3s ease;
+}
+
+#contact input:focus,
+#contact select:focus,
+#contact textarea:focus {
+  background-color: rgba(15, 23, 42, 0.95);
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.25);
+}
+
+#contact select option {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 10px;
+}
+
+#contactFormAlert.alert-success {
+  background-color: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #34d399;
+}
+
+#contactFormAlert.alert-error {
+  background-color: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #f87171;
+}
+
+#contactFormAlert.alert-info {
+  background-color: rgba(6, 182, 212, 0.15);
+  border: 1px solid rgba(6, 182, 212, 0.4);
+  color: #38bdf8;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer {
+
+  font-size: .95rem;
+
+}
+
+footer p {
+
+  margin-bottom: 8px;
+
+}
+
+/* ==========================
+   PROFILE IMAGE
+========================== */
+
+.profile-image {
+
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .15);
+
+}
+
+/* ==========================
+   CERTIFICATION CARDS
+========================== */
+
+.cert-card {
+
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+
+  transition: .4s;
+
+}
+
+.cert-card:hover {
+
+  transform: translateY(-10px);
+
+}
+
+/* ==========================
+   TIMELINE
+========================== */
+
+.timeline {
+
+  border-left: 4px solid #06b6d4;
+  padding-left: 30px;
+
+}
+
+.timeline-item {
+
+  margin-bottom: 30px;
+  position: relative;
+
+}
+
+.timeline-item::before {
+
+  content: '';
+  position: absolute;
+  left: -39px;
+  top: 5px;
+
+  width: 18px;
+  height: 18px;
+
+  background: #06b6d4;
+  border-radius: 50%;
+
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+.dark-mode {
+
+  background: #0f172a;
+  color: white;
+
+}
+
+.dark-mode .service-card,
+.dark-mode .project-card,
+.dark-mode .review-card,
+.dark-mode .cert-card,
+.dark-mode .stats-box {
+
+  background: #1e293b;
+  color: white;
+
+}
+
+.dark-mode .progress {
+
+  background: #334155;
+
+}
+
+.dark-mode footer {
+
+  background: black;
+
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar {
+
+  width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+
+  background: #e2e8f0;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+  background: #06b6d4;
+  border-radius: 20px;
+
+}
+
+/* ==========================
+   PROFILE IMAGE WITH GLOWING ROTATING DASHED BORDER
+========================== */
+
+.profile-border-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.profile-border-animated {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px dashed #39FF14;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.6), inset 0 0 15px rgba(57, 255, 20, 0.6);
+  animation: rotateDashed 20s linear infinite;
+  pointer-events: none;
+}
+
+.profile-border-animated-reverse {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: calc(100% + 16px);
+  height: calc(100% + 16px);
+  border: 2px dashed rgba(57, 255, 20, 0.4);
+  border-radius: 50%;
+  animation: rotateDashedReverse 15s linear infinite;
+  pointer-events: none;
+}
+
+.profile-image-wrapper {
+  width: 85%;
+  height: 85%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+  border: 4px solid #0f172a;
+  background-color: #0f172a;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.profile-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.profile-image-wrapper img:hover {
+  transform: scale(1.08);
+}
+
+@keyframes rotateDashed {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateDashedReverse {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* ==========================
+   MULTI-DEVICE RESPONSIVE BREAKPOINTS
+   (Mobile, Tablet, Laptop, Desktop, Television / 4K)
+========================== */
+
+/* 1. MOBILE (under 640px) */
+@media (max-width: 639px) {
+  .container {
+    width: 94%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .profile-border-container {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .profile-border-animated-reverse {
+    top: -6px;
+    left: -6px;
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+  }
+
+  #home h1 {
+    font-size: 2.25rem !important;
+    line-height: 1.25;
+  }
+
+  #home h2 {
+    font-size: 1.25rem !important;
+  }
+
+  .project-card img {
+    height: 180px;
+  }
+
+  .service-card,
+  .project-card,
+  .review-card {
+    margin-bottom: 15px;
+  }
+
+  #contact input,
+  #contact select,
+  #contact textarea {
+    font-size: 16px !important; /* Prevents auto-zoom on mobile WebKit */
+  }
+
+  footer a {
+    transition: .3s;
+  }
+
+  footer a:hover {
+    color: #06b6d4;
+    padding-left: 5px;
+  }
+
+  footer i {
+    transition: .3s;
+  }
+
+  footer i:hover {
+    transform: translateY(-5px);
+    color: #06b6d4;
+  }
+}
+
+/* 2. TABLET (640px to 1023px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .container {
+    width: 92%;
+  }
+
+  .profile-border-container {
+    width: 320px;
+    height: 320px;
+  }
+
+  #home h1 {
+    font-size: 3.2rem;
+  }
+}
+
+/* 3. LAPTOP & SMALL DESKTOP (1024px to 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .profile-border-container {
+    width: 380px;
+    height: 380px;
+  }
+}
+
+/* 4. LARGE DESKTOP (1440px to 1919px) */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .container {
+    width: 88%;
+    max-width: 1450px;
+  }
+
+  .profile-border-container {
+    width: 420px;
+    height: 420px;
+  }
+}
+
+/* 5. TELEVISION & 4K DISPLAY (1920px and above) */
+@media (min-width: 1920px) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  .container {
+    width: 85%;
+    max-width: 1800px;
+  }
+
+  .profile-border-container {
+    width: 480px;
+    height: 480px;
+  }
+
+  #home h1 {
+    font-size: 5rem;
+    line-height: 1.15;
+  }
+
+  #home h2 {
+    font-size: 2.5rem;
+  }
+
+  #home p {
+    font-size: 1.35rem;
+  }
+
+  .btn {
+    padding: 16px 36px;
+    font-size: 1.1rem;
+  }
+
+  .tv\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .tv\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* 6. ULTRA-WIDE 4K TV & BIG SCREENS (2560px and above) */
+@media (min-width: 2560px) {
+  body {
+    font-size: 1.25rem;
+  }
+
+  .container {
+    width: 82%;
+    max-width: 2300px;
+  }
+
+  .profile-border-container {
+    width: 560px;
+    height: 560px;
+  }
+
+  #home h1 {
+    font-size: 6rem;
+  }
+
+  #home h2 {
+    font-size: 3rem;
+  }
+}
+
+/* ==========================
+   TYPING EFFECT CURSOR
+========================== */
+
+#typing-text {
+  border-right: 3px solid #39FF14;
+  padding-right: 4px;
+  animation: blink-cursor 0.75s step-end infinite;
+}
+
+@keyframes blink-cursor {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #39FF14;
+  }
+}
+
+/* ==========================
+   CUSTOM RECTANGULAR SLICER SCROLLBAR
+========================== */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #020617;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
